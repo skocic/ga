@@ -42,15 +42,15 @@
       });
 
       setUser = function () {
-        var userId = document.getElementById('inputUserId');
+        var userId = document.getElementById('inputUserId').value;
         ga('set', 'userId', userId);
         alert('UserId set to ' + userId);
       }
 
       addItem = function () {
-        var itemId = document.getElementById('inputItemId');
-        var itemName = document.getElementById('inputItemName');
-        var price = document.getElementById('inputPrice');
+        var itemId = document.getElementById('inputItemId').value;
+        var itemName = document.getElementById('inputItemName').value;
+        var price = document.getElementById('inputPrice').value;
         ga('ecommerce:addItem', {
           'id': itemId,                     // Transaction ID. Required.
           'name': itemName,    // Product name. Required.
@@ -65,11 +65,6 @@
       buyItem = function () {
         ga('ecommerce:send');
         ga('ecommerce:clear');
-        alert('Bought');
-      }
-
-      clearTran = function () {
-        ga('ecommerce:send');
         alert('Bought');
       }
 
