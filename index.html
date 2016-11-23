@@ -8,6 +8,10 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -34,9 +38,9 @@
 
       ga('ecommerce:addItem', {
         'id': 'ITEM-1234',                     // Transaction ID. Required.
-        'name': 'Fluffy Pink Bunnies',    // Product name. Required.
+        'name': 'Some Product',    // Product name. Required.
         'sku': 'DD23444',                 // SKU/code.
-        'category': 'Party Toys',         // Category or variation.
+        'category': 'Chips',         // Category or variation.
         'price': '11.99',                 // Unit price.
         'quantity': '1'                   // Quantity.
       });
@@ -64,7 +68,6 @@
 
       buyItem = function () {
         ga('ecommerce:send');
-        ga('ecommerce:clear');
         alert('Bought');
       }
 
@@ -114,7 +117,7 @@
       <h2>Buy Item</h2>
       <form onsubmit="buyItem();">
         <div class="form-group">
-          <button type="submit" class="btn btn-default">Buy this item</button>
+          <button type="submit" class="btn btn-primary">Buy this item</button>
         </div>
       </form>
 
@@ -125,6 +128,9 @@
       </footer>
 
     </section>
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
