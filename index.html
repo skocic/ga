@@ -99,6 +99,8 @@
           .item(300, 1, "item-54321")        // Add 1 unit the item item-54321 worth 300.
           .item(200, 2, "item-41325")        // Add 2 units the item item-41325 worth 200.
           .send();
+        alert("Tried new approach");
+        return false;
       }
 
     </script>
@@ -162,9 +164,9 @@
       </form>
 
       <h2>New Approach</h2>
-      <form onsubmit="return newApproach();">
+      <form onsubmit="">
         <div class="form-group">
-          <button type="submit" class="btn btn-primary">Try new approach</button>
+          <button type="submit" class="btn btn-primary" onclick="return newApproach();">Try new approach</button>
         </div>
       </form>
 
