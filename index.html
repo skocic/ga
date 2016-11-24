@@ -91,6 +91,16 @@
         return false;
       }
 
+      newApproach = function () {
+        var visitor = ua('');
+        visitor.event("Event Category", "Event Action").send();
+        visitor
+          .transaction("trans-12345", 500)   // Create transaction trans-12345 worth 500 total.
+          .item(300, 1, "item-54321")        // Add 1 unit the item item-54321 worth 300.
+          .item(200, 2, "item-41325")        // Add 2 units the item item-41325 worth 200.
+          .send();
+      }
+
     </script>
   </head>
   <body>
@@ -148,6 +158,13 @@
       <form onsubmit="return buyItem();">
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Buy this item</button>
+        </div>
+      </form>
+
+      <h2>New Approach</h2>
+      <form onsubmit="return newApproach();">
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Try new approach</button>
         </div>
       </form>
 
