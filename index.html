@@ -79,7 +79,6 @@
         var li = document.createElement("li");
         li.appendChild(document.createTextNode(itemName + ', price ' + price));
         ul.appendChild(li);
-        alert('Added item ' + itemName);
       }
 
       buyItem = function () {
@@ -122,7 +121,7 @@
       <form onsubmit="createTransaction();">
         <div class="form-group">
           <label for="inputTransactionId">User ID</label>
-          <input type="text" class="form-control" id="inputTransactionId" placeholder="USER-001">
+          <input type="text" class="form-control" id="inputTransactionId" placeholder="TRAN-003" value="TRAN-003">
           <button type="submit" class="btn btn-default">Create transaction</button>
         </div>
       </form>
@@ -136,7 +135,7 @@
           <input type="text" class="form-control" id="inputItemName" placeholder="Kitten food" value="Kitten food">
           <label for="inputPrice">Price</label>
           <input type="text" class="form-control" id="inputPrice" placeholder="12.99" value="12.99">
-          <button type="submit" class="btn btn-default">Buy this item</button>
+          <button type="submit" class="btn btn-default">Add this item</button>
         </div>
       </form>
       <div id="items"></div>
