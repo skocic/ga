@@ -134,34 +134,28 @@
       </form>
 
       <h2>Create transaction</h2>
-      <form onsubmit="return createTransaction();">
-        <div class="form-group">
-          <label for="inputTransactionId">User ID</label>
-          <input type="text" class="form-control" id="inputTransactionId" placeholder="TRAN-003" value="TRAN-003">
-          <button type="submit" class="btn btn-default">Create transaction</button>
-        </div>
-      </form>
+      <div class="form-group">
+        <label for="inputTransactionId">User ID</label>
+        <input type="text" class="form-control" id="inputTransactionId" placeholder="TRAN-003" value="TRAN-003">
+        <button onclick="return createTransaction();" class="btn btn-default">Create transaction</button>
+      </div>
 
       <h2>Add Item</h2>
-      <form onsubmit="return addItem();">
-        <div class="form-group">
-          <label for="inputItemId">Item ID</label>
-          <input type="text" class="form-control" id="inputItemId" placeholder="ITEM-123" value="ITEM-123">
-          <label for="inputItemName">Name</label>
-          <input type="text" class="form-control" id="inputItemName" placeholder="Kitten food" value="Kitten food">
-          <label for="inputPrice">Price</label>
-          <input type="text" class="form-control" id="inputPrice" placeholder="12.99" value="12.99">
-          <button type="submit" class="btn btn-default">Add this item</button>
-        </div>
-      </form>
+      <div class="form-group">
+        <label for="inputItemId">Item ID</label>
+        <input type="text" class="form-control" id="inputItemId" placeholder="ITEM-123" value="ITEM-123">
+        <label for="inputItemName">Name</label>
+        <input type="text" class="form-control" id="inputItemName" placeholder="Kitten food" value="Kitten food">
+        <label for="inputPrice">Price</label>
+        <input type="text" class="form-control" id="inputPrice" placeholder="12.99" value="12.99">
+        <button class="btn btn-default" onclick="return addItem();">Add this item</button>
+      </div>
       <div id="items"></div>
 
       <h2>Buy Item</h2>
-      <form onsubmit="return buyItem();">
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary">Buy this item</button>
-        </div>
-      </form>
+      <div class="form-group">
+        <button onclick="return buyItem();" class="btn btn-primary">Buy this item</button>
+      </div>
 
       <h2>New Approach</h2>
       <form onsubmit="">
