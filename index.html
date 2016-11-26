@@ -90,7 +90,7 @@
 
       clearCart = function () {
         ga('ecommerce:clear');
-        document.getElementById('items').value = '';
+        document.getElementById('items').innerText = '';
         alert('Cancelled');
       }
 
