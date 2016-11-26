@@ -111,8 +111,9 @@
 
     <section class="main-content">
       <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-      <h3>Page View</h3>
-
+      <h3>Page Intro</h3>
+      <p>This is an example for Ecommerce tracking in Google Analytics. For this to work, you need to include your
+        own ID in the form of <code>UA-XXXXXXX-X</code> in the header</p>
       <p>Page view is automatically triggered in header with <code>ga('send', 'pageview');</code></p>
       <p>Shop fee transaction is automatically triggered
         <pre>ga('ecommerce:addTransaction', {
@@ -175,6 +176,12 @@ ga('ecommerce:send');</pre>
         <button onclick="buy();" class="btn btn-primary">Buy</button>
       </div>
 
+
+      <blockquote>Keep in mind that it can take 24 hours to see the results as they are refreshed once a day.</blockquote>
+      <p>In my experience, doing it before midnight, makes them available in the morning. Good to know for
+        experimenting...</p>
+
+      <img src="images/e-commerce.png">
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/skocic/ga">Google Analytics Ecommerce Example</a> is
           maintained by <a href="https://github.com/skocic">skocic</a>.</span>
@@ -182,7 +189,6 @@ ga('ecommerce:send');</pre>
         <span class="site-footer-credits">Using the <a href="https://github.com/jasonlong/cayman-theme">Cayman
           theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-
     </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
